@@ -1,0 +1,369 @@
+.SliderContainer{
+    width: 50%;
+    height: 530px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    /* background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1)) */
+    /* background: rgb(193, 255, 157); */
+    background: #ffffff10;
+    backdrop-filter: blur(10px);
+    /* border: thin dotted #f00; */
+}
+
+.Slider{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.active{
+    background-color: transparent;
+}
+
+.Carousel{
+    width: 95%;
+    height: 95%;
+    top: 30px;
+}
+
+.Middle{
+    width: 50%;
+    height: 500px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    justify-content: space-around;
+}
+
+.MiddleInfo{
+    width: 90%;
+    height: 180px;
+}
+
+.MiddleInfo h1{
+    font-family: 'Anton', sans-serif;
+    margin-bottom: 20px;
+}
+
+.MiddleInfo p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 19px;
+}
+
+.SliderButton{
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    border: thin solid #fff;
+    color: #fff;
+    margin-top: 10px;
+    background-color: transparent;
+}
+
+.MiddleImage1, .MiddleImage2, .MiddleImage3{
+    width: 80%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.carousel-indicators [data-bs-target]{
+    background-color: #ccc;
+}
+
+.Carousel.active{
+    background-color: transparent;
+}
+
+.MiddleImage1{
+    background-image: url('../../assets/responsive-web-design.jpg');
+}
+
+.MiddleImage2{
+    background-image: url('../../assets/image-2.jpg');
+}
+
+.MiddleImage3{
+    background-image: url('../../assets/image-3.jpg');
+}
+
+
+
+
+
+/* 
+@media (min-width: 1200px) and (max-width: 1399px){
+
+    .SliderContainer{
+        width: 100vw;
+        min-height: 260px;
+        margin: 100px 0;
+        padding: 10px 0 25px 0;
+    }
+    
+    
+    .SliderTitle h1{
+        font-size: 2.5vw;
+        font-weight: bold;
+    }
+
+    .Carousel{
+        width: 60%;
+        min-height: 110px;
+        bottom: 20px;
+    }
+    
+    .carousel-indicators [data-bs-target]{
+        width: 30px;
+        position: relative;
+        top: 20px;
+    }
+
+    .Marca1{
+        background-image: url('../../assets/nike.png');
+        background-size: 75%;
+    }
+    
+    .Marca2{
+        background-image: url('../../assets/adidaslogo.png');
+        background-size: 110%;
+    }
+    
+    .Marca3{
+        background-image: url('../../assets/under.png');
+        background-size: 70%;
+    }
+    
+    .Marca4{
+        background-image: url('../../assets/puma.png');
+        background-size: 75%;
+    }
+    
+    .Marca5{
+        background-image: url('../../assets/gucci.png');
+        background-size: 100%;
+    }
+    
+    .Marca6{
+        background-image: url('../../assets/vanslogo.png');
+        background-size: 60%;
+    }
+    
+    .Marca7{
+        background-image: url('../../assets/nike2.png');
+        background-size: 90%;
+    }
+    
+    .Marca8{
+        background-image: url('../../assets/off-white.png');
+        background-size: 60%;
+    }
+    
+    .Marca9{
+        width: 170px;
+        background-image: url('../../assets/balenciaga.png');
+        background-size: 90%;
+    }
+    
+    .Marca10{
+        background-image: url('../../assets/jordan.png');
+        background-size: 70%;
+    }
+    
+    .Marca11{
+        background-image: url('../../assets/reebok.png');
+        background-size: 80%;
+    }
+    
+    .Marca12{
+        background-image: url('../../assets/adidas2.png');
+        background-size: 65%;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+
+    .SliderContainer{
+        width: 100vw;
+        height: 250px;
+        margin: 50px 0;
+        padding: 10px 0 25px 0;
+    }
+    
+    .SliderTitle h1{
+        font-size: 4vw;
+        font-weight: bold;
+    }
+    
+    .Carousel{
+        width: 80%;
+        min-height: 110px;
+        height: 130px;
+        bottom: 30px;
+    }
+    
+    .carousel-indicators [data-bs-target]{
+        width: 30px;
+        position: relative;
+        top: 25px;
+    }
+    
+    .Marca1, .Marca2, .Marca3, .Marca4, .Marca5, .Marca6, .Marca7, .Marca8, .Marca9, .Marca10, .Marca11, .Marca12{
+        width: 110px;
+        height: 110px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        transition: 0.5s all;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+
+    .SliderContainer{
+        width: 100vw;
+        min-height: 200px;
+        margin: 50px 0;
+        padding: 10px 0 25px 0;
+    }
+    
+    .SliderTitle h1{
+        font-size: 4vw;
+        font-weight: bold;
+    }
+    
+    .Carousel{
+        width: 80%;
+        max-height: 140px;
+        height: 140px;
+        bottom: 20px;
+    }
+    
+    .carousel-indicators [data-bs-target]{
+        width: 20px;
+        position: relative;
+        top: 5px;
+    }
+    
+    .Marca1, .Marca2, .Marca3, .Marca4, .Marca5, .Marca6, .Marca7, .Marca8, .Marca9, .Marca10, .Marca11, .Marca12{
+        width: 100px;
+        height: 100px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        transition: 0.5s all;
+    }
+    
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+
+    .SliderContainer{
+        width: 100vw;
+        height: 200px;
+        margin: 50px 0;
+        padding: 10px 0 25px 0;
+    }
+
+    .SliderTitle h1{
+        font-size: 4.5vw;
+        font-weight: bold;
+    }
+
+    .Carousel{
+        width: 85%;
+        min-height: 100px;
+        bottom: 10px;
+    }
+
+    .carousel-indicators [data-bs-target]{
+        width: 20px;
+        position: relative;
+        top: 20px;
+    }
+
+    .Marca1, .Marca2, .Marca3, .Marca4, .Marca5, .Marca6, .Marca7, .Marca8, .Marca9, .Marca10, .Marca11, .Marca12{
+        width: 90px;
+        height: 90px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        transition: 0.5s all;
+    }
+
+}
+
+@media (max-width: 575px){
+
+    .SliderContainer{
+        width: 100vw;
+        min-height: 200px;
+        height: 200px;
+        margin: 50px 0;
+        padding: 10px 0 30px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background: #cccccc40;
+    }
+
+    .Carousel{
+        width: 80%;
+        max-height: 80px;
+    }
+    
+    .carousel-indicators [data-bs-target]{
+        width: 20px;
+        position: relative;
+        top: 35px;
+    }
+    
+    .SliderTitle h1{
+        font-size: 7vw;
+        font-weight: bold;
+    }
+
+    .Marca1, .Marca2, .Marca3, .Marca4, .Marca5, .Marca6, .Marca7, .Marca8, .Marca9, .Marca10, .Marca11, .Marca12{
+        width: 70px;
+        height: 70px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        transition: 0.5s all;
+    }
+
+    .Marca1{ background-size: 70% }
+    
+    .Marca2{ background-size: 100% }
+    
+    .Marca3{ background-size: 70% }
+    
+    .Marca4{ background-size: 80% }
+    
+    .Marca5{ background-size: 90% }
+    
+    .Marca6{ background-size: 60% }
+    
+    .Marca7{ background-size: 80% }
+    
+    .Marca8{ background-size: 60% }
+    
+    .Marca9{ width: 160px; background-size: 60% }
+    
+    .Marca10{ background-size: 70% }
+    
+    .Marca11{ background-size: 90% }
+    
+    .Marca12{ background-size: 70% }
+
+} */

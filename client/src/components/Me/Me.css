@@ -1,0 +1,53 @@
+.meContainer{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* border: thin dotted #000; */
+}
+
+.meContainerInfo{ 
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* border: thin dotted #00f; */
+}
+
+.meInfo{ 
+    width: 50%;
+    height: 70%;
+    border: thin dotted #f00;
+}
+
+.meInfo h1{
+    height: 80px;
+    font-family: 'Anton', sans-serif;
+    font-size: 5em;
+}
+
+.meInfo h3{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    color: rgb(170, 170, 170);
+}
+
+.meInfo p{
+    margin-top: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5em;
+}
+
+.meImage{ 
+    width: 50%;
+    height: 100%;
+    background-image: url('../../assets/dev.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80%;
+    /* border: thin dotted #f00; */
+}
