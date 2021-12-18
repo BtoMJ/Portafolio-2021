@@ -9,14 +9,12 @@ function NavBar() {
                 <img src={logo} alt="logo" />
             </div>
             <div className="navBarMenu">
-                <a href="/">home</a>
-                <a href="#me">about me</a>
+                <a href="/">inicio</a>
+                <a href="#me">sobre mí</a>
                 <a href="#webWorks">web</a>
-                <a href="#designWorks">design</a>
-                <a href="#services">services</a>
-                <a href="#contact">contact</a>
+                <a href="#designWorks">diseño</a>
+                <a href="#contact">contacto</a>
             </div>
-            
         </div>
     )
 }

@@ -1,4 +1,112 @@
 .contactContainer{
     width: 100%;
     height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+}
+
+.contact{
+    width: 70%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contactImage{
+    width: 40%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contactImage img{
+    height: 600px;
+}
+
+.contactForm{
+    width: 60%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between ;
+}
+
+.Form{
+    width: 100%; 
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+}
+
+.TitleLocation h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.SubTitleLocation{
+    width: 650px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.InputFormContact{
+    width: 80%;
+    height: 30px;
+    padding: 10px;
+    margin-left: 11px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.InputFormContact:focus{
+    outline:  solid 1px #f00;
+}
+
+.TextAreaFormContact{
+    width: 80%;
+    height: 150px;
+    margin-left: 11px;
+    padding: 10px;
+    resize: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.TextAreaFormContact:focus{
+    outline: solid 1px #f00;
+}
+
+.ButtonFormContact{
+    width: 120px;
+    height: 35px; 
+    margin-top: 20px;
+    margin-left: 10px;
+    border: none;
+    background: #000000;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.5s all;
+}
+
+.ButtonFormContact:hover{
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
 }

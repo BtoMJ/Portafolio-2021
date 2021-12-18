@@ -14,15 +14,15 @@ function Footer() {
             
             <div className="footerSocialMedia">
                 <div className="footerRed">
-                    <a href="https://github.com/BtoMJ" target="_blank" rel="next">
+                    <a href="https://github.com/BtoMJ" target="_blank" rel="noreferrer">
                         <img src={git} alt="GitHub" className="hvr-grow-shadow"/>
                     </a>
-                    <a href="https://www.linkedin.com/in/daniel-full-stack/" target="_blank">
+                    <a href="https://www.linkedin.com/in/daniel-full-stack/" target="_blank" rel="noreferrer">
                         <img src={linkedin} alt="Linkedin" className="hvr-grow-shadow"/></a>
-                    <a href="https://twitter.com/DanielO1384" target="_blank">
+                    <a href="https://twitter.com/DanielO1384" target="_blank" rel="noreferrer">
                         <img src={twitter} alt="Twitter" className="hvr-grow-shadow"/>
                     </a>
-                    <a href="https://wa.me/524761037311" target="_blank">
+                    <a href="https://wa.me/524761037311" target="_blank" rel="noreferrer">
                         <img src={whatsapp} alt="Whatsapp" className="hvr-grow-shadow"/>
                     </a>
                 </div>
