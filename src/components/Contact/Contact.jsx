@@ -2,7 +2,6 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import emailjs from 'emailjs-com';
-import ApiKey from '../../ApiKey';
 import swal from 'sweetalert';
 import email from '../../assets/mail.png';
 import './Contact.css';
@@ -10,7 +9,7 @@ import './Contact.css';
 const enviarCorreo =(e) => {
     e.preventDefault()
 
-    emailjs.sendForm(ApiKey.SERVICE_ID, ApiKey.TEMPLATE_ID, e.target, ApiKey.USER_ID).then(
+    emailjs.sendForm('service_ucpocop', 'template_cukym8f', e.target, 'user_Cv9Or6FaAr9dBlgkiVBHf').then(
         result => {
            
             swal("Correo enviado correctamente", {
