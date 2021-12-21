@@ -316,4 +316,103 @@ a.boton:hover:after{
     
 
 
+
+}
+@media (min-width: 992px) and (max-width: 1199px){
+
+    .webWorksContainer{
+        width: 100%;
+        height: 900px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: #cccccc80;
+         /* border: thin dotted #f00; */
+        }
+        
+    .webWorksInfo{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        /* border: thin dotted #f00; */
+    }
+
+    .webWorksTitle{
+        width: 40%;
+        height: 50px;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        /* border: thin dotted #f00; */
+    }
+
+    .card {
+        width: 180px;
+        height: 300px;
+        border: none;
+        margin: 0 5px 30px;
+        background-color: transparent;
+    }
+
+    .card__face--front h2, .card__face--front2 h2 {
+        color: #FFF;
+        text-align: center;
+        font-size: 24px;
+        text-shadow: 0 5px 5px  rgba(0, 0, 0, 0.3);
+    }
+    
+    .card__body {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .card__body h4 {
+        color: var(--dark);
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    
+    .card__body p {
+        color: var(--dark);
+        font-size: 12px;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .card__header {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        height: 150px;
+        border-radius: 0 0px 7% 7%;
+        overflow: hidden;
+    }
+    
+    .pp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        /* border: thin dotted #f00; */
+    }
+
+    /* .ppCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        width: 250px;
+    } */
+    
+
+
 }
