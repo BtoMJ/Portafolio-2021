@@ -177,7 +177,7 @@ function WebWorks() {
                             <div className="card__face card__face--back" >
                                 <div className="card__content" >
                                      <div class="card__header">
-                                        <img src={img6} alt="Trabajos Web" className="pp" />
+                                        <img src={img6} alt="Trabajos Web" className="ppCard" />
                                     </div>
                                     <div class="card__body">
                                         <h4>Consultora</h4>

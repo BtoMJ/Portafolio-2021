@@ -64,6 +64,14 @@
     align-items: center;
 }
 
+.ppCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 270px;
+    /* border: thin dotted #f00; */
+}
+
 .pp2{
     display: flex;
     flex-direction: column;
@@ -79,4 +87,52 @@
     width: 140%;
     position: relative;
     margin-left: -50px;
+}
+
+@media (min-width: 1200px) and (max-width: 1399px){
+
+    .designWorksContainer{
+        width: 100%;
+        height: 1750px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+         /* border: thin dotted #f00; */
+    }
+    
+    .designWorksInfo{
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .ppCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        width: 230px;
+        /* border: thin dotted #f00; */
+    }
+
+    .pp2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: -30px;
+    }
+
+    .pp3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 140%;
+        position: relative;
+        margin-left: -5px;
+    }
+
 }

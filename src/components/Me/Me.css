@@ -53,3 +53,55 @@
     background-size: 80%;
     /* border: thin dotted #f00; */
 }
+
+@media (min-width: 1200px) and (max-width: 1399px){
+
+    .meContainer{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        /* border: thin dotted #000; */
+        
+    }
+    
+    .meContainerInfo{ 
+        width: 80%;
+        height: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        /* border: thin dotted #00f; */
+    }
+    
+    .meInfo{ 
+        width: 50%;
+        height: 75%;
+        padding: 10px 0;
+        /* border: thin dotted #f00; */
+    }
+    
+    .meInfo h1{
+        height: 80px;
+        font-family: 'Anton', sans-serif;
+        font-size: 4.3em;
+    }
+    
+    .meInfo h3{
+        font-size: 1.4rem;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+        color: rgb(170, 170, 170);
+    }
+    
+    .meInfo p{
+        margin-top: 20px;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1.3em;
+    }
+
+
+}

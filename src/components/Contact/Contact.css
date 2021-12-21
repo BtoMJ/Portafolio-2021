@@ -110,3 +110,59 @@
     cursor: pointer;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
 }
+
+
+@media (min-width: 1200px) and (max-width: 1399px){
+
+    .contact{
+        width: 80%;
+        height: 600px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .contactImage img{
+        height: 550px;
+    }
+    
+    .contactForm{
+        width: 52%;
+        height: 550px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between ;
+        /* border: thin dotted #f00; */
+    }
+
+    .SubTitleLocation{
+        width: 530px;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    
+    .InputFormContact{
+        width: 90%;
+        height: 30px;
+        padding: 10px;
+        margin-left: 11px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .TextAreaFormContact{
+        width: 90%;
+        height: 150px;
+        margin-left: 11px;
+        padding: 10px;
+        resize: none;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    }
+}

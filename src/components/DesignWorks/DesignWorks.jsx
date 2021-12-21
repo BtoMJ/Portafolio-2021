@@ -189,7 +189,7 @@ function DesignWorks() {
                             <div className="card__face card__face--back" >
                                 <div className="card__content" >
                                      <div class="card__header">
-                                        <img src={img8} alt="Trabajos Diseño" className="pp" />
+                                        <img src={img8} alt="Trabajos Diseño" className="ppCard" />
                                     </div>
                                     <div class="card__body">
                                         <h4>Concord</h4>
@@ -211,7 +211,7 @@ function DesignWorks() {
                             <div className="card__face card__face--back" >
                                 <div className="card__content" >
                                      <div class="card__header">
-                                        <img src={img9} alt="Trabajos Diseño" className="pp" />
+                                        <img src={img9} alt="Trabajos Diseño" className="ppCard" />
                                     </div>
                                     <div class="card__body">
                                         <h4>Navidad</h4>
@@ -233,7 +233,7 @@ function DesignWorks() {
                             <div className="card__face card__face--back" >
                                 <div className="card__content" >
                                      <div class="card__header">
-                                        <img src={img10} alt="Trabajos Diseño" className="pp" />
+                                        <img src={img10} alt="Trabajos Diseño" className="ppCard" />
                                     </div>
                                     <div class="card__body">
                                         <h4>Auladiser</h4>
@@ -257,7 +257,7 @@ function DesignWorks() {
                             <div className="card__face card__face--back" >
                                 <div className="card__content" >
                                      <div class="card__header">
-                                        <img src={img11} alt="Trabajos Diseño" className="pp" />
+                                        <img src={img11} alt="Trabajos Diseño" className="pp2" />
                                     </div>
                                     <div class="card__body">
                                         <h4>Skin Care</h4>

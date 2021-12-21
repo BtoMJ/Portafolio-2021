@@ -14,7 +14,7 @@ function Slider() {
                             <div className="MiddleInfo">
                                 <h1>Desarrollos a medida</h1>
                                 <p>Creo exactamente lo que necesitas, funcional y con un agradable diseño moderno.</p>
-                                <button className="SliderButton">+ info</button>
+                                <a href="#webWorks" className="SliderButton">+ info</a>
                             </div>
                         </div>
                         <div className="Middle">
@@ -28,7 +28,7 @@ function Slider() {
                             <div className="MiddleInfo">
                                 <h1>Diseños Únicos</h1>
                                 <p>No verás tu diseño en ninguna parte, todo se crea, nada de plantillas de la web.</p>
-                                <button className="SliderButton">+ info</button>
+                                <a href="#webWorks" className="SliderButton">+ info</a>
                             </div>
                         </div>
                         <div className="Middle">
@@ -42,7 +42,7 @@ function Slider() {
                             <div className="MiddleInfo">
                                 <h1>Muchas Herramientas</h1>
                                 <p>Tengo un amplio stack de tecnologías listo para ofrecerte calidad en cada desarrollo.</p>
-                                <button className="SliderButton">+ info</button>
+                                <a href="#webWorks" className="SliderButton">+ info</a>
                             </div>
                         </div>
                         <div className="Middle">
