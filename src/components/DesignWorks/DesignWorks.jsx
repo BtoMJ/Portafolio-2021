@@ -17,6 +17,9 @@ import img15 from '../../assets/design/animacion/5.png';
 import './DesignWorks.css';
 
 function DesignWorks() {
+
+    var intFrameWidth = window.innerWidth;
+
     return (
         <div className="designWorksContainer" id="designWorks">
              <div className="designWorksInfo">
@@ -113,7 +116,7 @@ function DesignWorks() {
                         </div>
                     </div> 
                     {/* -------------------------------------------------------------------------- */}
-                    <div className="card" data-tilt>
+                    <div className={intFrameWidth <= 991 ? "invisible":"card"} data-tilt>
                         <div className="card__inner" >
                             <div className="card__face card__face--front2">
                                 <h2>CROMÁTICA</h2>
@@ -225,7 +228,7 @@ function DesignWorks() {
                         </div>
                     </div> 
                     {/* -------------------------------------------------------------------------- */}
-                    <div className="card" data-tilt>
+                    <div className={intFrameWidth <= 991 ? "invisible":"card"} data-tilt>
                         <div className="card__inner" >
                             <div className="card__face card__face--front2">
                                 <h2>TEMPLATES</h2>
@@ -337,7 +340,7 @@ function DesignWorks() {
                         </div>
                     </div> 
                     {/* -------------------------------------------------------------------------- */}
-                    <div className="card" data-tilt>
+                    <div className={intFrameWidth <= 991 ? "invisible":"card"} data-tilt>
                         <div className="card__inner" >
                             <div className="card__face card__face--front2">
                                 <h2>PRODUCTOS</h2>

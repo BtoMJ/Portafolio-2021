@@ -242,3 +242,94 @@
 
 
 }
+
+@media (min-width: 768px) and (max-width: 991px){
+
+    .contact{
+        width: 90%;
+        height: 600px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        /* border: thin dotted #f00; */
+    }
+
+    .contactImage{
+        width: 40%;
+        height: 600px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        /* border: thin dotted #f00; */
+    }
+    
+    .contactImage img{
+        height: 400px;
+    }
+    
+    .contactForm{
+        width: 52%;
+        height: 550px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between ;
+        /* border: thin dotted #f00; */
+    }
+
+    .TitleLocation h1{
+        font-family: 'Anton', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
+    .SubTitleLocation{
+        width: 360px;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    
+    .InputFormContact{
+        width: 95%;
+        height: 30px;
+        font-size: 13px;
+        padding: 10px;
+        margin-left: 11px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    }
+    
+    .TextAreaFormContact{
+        width: 95%;
+        height: 150px;
+        font-size: 13px;
+        margin-left: 11px;
+        padding: 10px;
+        resize: none;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .ButtonFormContact{
+        width: 100px;
+        height: 30px; 
+        margin-top: 20px;
+        margin-left: 10px;
+        border: none;
+        background: #000000;
+        color: #fff;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 500;
+        transition: 0.5s all;
+    }
+
+
+}
