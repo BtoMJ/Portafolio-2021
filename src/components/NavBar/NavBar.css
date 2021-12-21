@@ -49,3 +49,22 @@
     /* transform: translateY(-3px); */
     /* color: red; */
 }
+
+
+@media (min-width: 992px) and (max-width: 1199px){
+
+    .navBarLogo img{
+        width: 400px;
+    }
+
+    .navBarMenu{
+        width: 50%;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        /* border: thin dotted #00f; */
+    }
+
+}

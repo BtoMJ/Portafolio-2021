@@ -52,3 +52,24 @@
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
+
+  @media (min-width: 992px) and (max-width: 1199px){
+
+    .footerContainer{
+        width: 60%;
+        height: 80px;
+        padding: 20px 0;
+        display: flex; 
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        color: #00000080;
+        font-size: 13px;
+    }
+
+    .footerRed img{
+        height: 25px;
+    }
+    
+
+  }
