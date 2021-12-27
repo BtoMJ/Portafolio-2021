@@ -20,25 +20,39 @@ function DesignWorks() {
 
     var intFrameWidth = window.innerWidth;
 
+    function flipped(x){
+        const card = document.querySelectorAll(".card__inner");
+        card[x].classList.toggle('is-flipped');
+    };
+
     return (
         <div className="designWorksContainer" id="designWorks">
              <div className="designWorksInfo">
-                <div className="designWorksTitle"><h1>Trabajos de Diseño</h1></div>
+                <div className="designWorksTitle">
+                    <h1>Trabajos de Diseño</h1>
+                    <p>
+                        Aquí te muestro algunos de mis trabajos de diseño gráfico, no son todos, 
+                        solo es un vistazo a lo que puedo hacer.
+                    </p>
+                </div>
 
                 <div className="designWorksData">
 
                     <div className="designWorksSubTitle"><h2>Logotipos</h2></div> 
-                    <div className="card" data-tilt>
-                        <div className="card__inner" >
+                    <div className="card" >
+                        <div className="card__inner" onClick={ intFrameWidth <= 768 ? ()=>flipped(10) : ''}>
                             <div className="card__face card__face--front2">
                                 <h2>BAJÍO SHOES</h2>
+                                <div className={ intFrameWidth < 800 ? "tooltipTitle":"invisible"}>
+                                    da click para ver la información
+                                </div>
                             </div>
                             <div className="card__face card__face--back" >
                                 <div className="card__content" >
-                                     <div class="card__header2">
+                                     <div className="card__header2">
                                         <img src={img1} alt="Trabajos Diseño" className="pp2" />
                                     </div>
-                                    <div class="card__body">
+                                    <div className="card__body">
                                         <h4>Negocio</h4>
                                         <p>Empresa de fabricación de calzado urbano y deportivo, 
                                            para toda la familia, venta por mayoreo. 
@@ -50,17 +64,20 @@ function DesignWorks() {
                         </div>
                     </div> 
                     {/* -------------------------------------------------------------------------- */}
-                    <div className="card" data-tilt>
-                        <div className="card__inner" >
+                    <div className="card" >
+                        <div className="card__inner" onClick={ intFrameWidth <= 768 ? ()=>flipped(11) : ''}>
                             <div className="card__face card__face--front2">
                                 <h2>CAJAS Y SINTÉTICOS</h2>
+                                <div className={ intFrameWidth < 800 ? "tooltipTitle":"invisible"}>
+                                    da click para ver la información
+                                </div>
                             </div>
                             <div className="card__face card__face--back" >
                                 <div className="card__content" >
-                                     <div class="card__header2">
+                                     <div className="card__header2">
                                         <img src={img2} alt="Trabajos Diseño" className="pp2" />
                                     </div>
-                                    <div class="card__body">
+                                    <div className="card__body">
                                         <h4>Peletería</h4>
                                         <p>Insumos para la fabricación de calzado, así como para tu
                                            venta y distribución (cajas, cintas adhesivas, etc). 
@@ -72,17 +89,20 @@ function DesignWorks() {
                         </div>
                     </div> 
                     {/* -------------------------------------------------------------------------- */}
-                    <div className="card" data-tilt>
-                        <div className="card__inner" >
+                    <div className="card" >
+                        <div className="card__inner" onClick={ intFrameWidth <= 768 ? ()=>flipped(12) : ''}>
                             <div className="card__face card__face--front2">
                                 <h2>FALCO</h2>
+                                <div className={ intFrameWidth < 800 ? "tooltipTitle":"invisible"}>
+                                    da click para ver la información
+                                </div>
                             </div>
                             <div className="card__face card__face--back" >
                                 <div className="card__content" >
-                                     <div class="card__header2">
+                                     <div className="card__header2">
                                         <img src={img3} alt="Trabajos Diseño" className="pp2" />
                                     </div>
-                                    <div class="card__body">
+                                    <div className="card__body">
                                         <h4>Calzado</h4>
                                         <p>Fábrica de calzado deportivo para niños, 
                                            especializado en tenis para correr y urbano. 
@@ -94,17 +114,20 @@ function DesignWorks() {
                         </div>
                     </div> 
                     {/* -------------------------------------------------------------------------- */}
-                    <div className="card" data-tilt>
-                        <div className="card__inner" >
+                    <div className={intFrameWidth <= 991 ? "invisible":"card"} >
+                        <div className="card__inner" onClick={ intFrameWidth <= 768 ? ()=>flipped(13) : ''}>
                             <div className="card__face card__face--front2">
                                 <h2>CORVET SUELAS</h2>
+                                <div className={ intFrameWidth < 800 ? "tooltipTitle":"invisible"}>
+                                    da click para ver la información
+                                </div>
                             </div>
                             <div className="card__face card__face--back" >
                                 <div className="card__content" >
-                                     <div class="card__header2">
+                                     <div className="card__header2">
                                         <img src={img4} alt="Trabajos Diseño" className="pp2" />
                                     </div>
-                                    <div class="card__body">
+                                    <div className="card__body">
                                         <h4>Hulera</h4>
                                         <p>Fábrica de suelas para calzado en distintos materiales, 
                                            como EVA, Phytlon, TR entre otros. 
@@ -116,17 +139,21 @@ function DesignWorks() {
                         </div>
                     </div> 
                     {/* -------------------------------------------------------------------------- */}
-                    <div className={intFrameWidth <= 991 ? "invisible":"card"} data-tilt>
-                        <div className="card__inner" >
+                    {/* <div className={ intFrameWidth > 575 && intFrameWidth < 922 ? "invsible" : "card"} > */}
+                    <div className={intFrameWidth <= 991 ? "invisible":"card"} >
+                        <div className="card__inner" onClick={ intFrameWidth <= 768 ? ()=>flipped(14) : ''}>
                             <div className="card__face card__face--front2">
                                 <h2>CROMÁTICA</h2>
+                                <div className={ intFrameWidth < 800 ? "tooltipTitle":"invisible"}>
+                                    da click para ver la información
+                                </div>
                             </div>
                             <div className="card__face card__face--back" >
                                 <div className="card__content" >
-                                     <div class="card__header2">
+                                     <div className="card__header2">
                                         <img src={img5} alt="Trabajos Diseño" className="pp2" />
                                     </div>
-                                    <div class="card__body">
+                                    <div className="card__body">
                                         <h4>Capacitaciones</h4>
                                         <p>Instituto de actualización de conocimientos 
                                            especializados en neurociencias aplicadas. 
@@ -140,17 +167,20 @@ function DesignWorks() {
                     {/* ------------------------------------- FIN 1------------------------------------- */}
 
                     <div className="designWorksSubTitle"><h2>Publicidad</h2></div> 
-                    <div className="card" data-tilt>
-                        <div className="card__inner" >
+                    <div className="card" >
+                        <div className="card__inner" onClick={ intFrameWidth <= 768 ? ()=>flipped(15) : ''}>
                             <div className="card__face card__face--front2">
                                 <h2>FOTOMONTAJES</h2>
+                                <div className={ intFrameWidth < 800 ? "tooltipTitle":"invisible"}>
+                                    da click para ver la información
+                                </div>
                             </div>
                             <div className="card__face card__face--back" >
                                 <div className="card__content" >
-                                     <div class="card__header">
+                                     <div className="card__header">
                                         <img src={img6} alt="Trabajos Diseño" className="pp" />
                                     </div>
-                                    <div class="card__body">
+                                    <div className="card__body">
                                         <h4>Sport Corvet</h4>
                                         <p>Edición de fotografías para montajes y creación de posters 
                                            para redes sociales en distintas medidas. 
@@ -162,17 +192,20 @@ function DesignWorks() {
                         </div>
                     </div> 
                     {/* -------------------------------------------------------------------------- */}
-                    <div className="card" data-tilt>
-                        <div className="card__inner" >
+                    <div className="card" >
+                        <div className="card__inner" onClick={ intFrameWidth <= 768 ? ()=>flipped(16) : ''}>
                             <div className="card__face card__face--front2">
                                 <h2>INVITACIONES</h2>
+                                <div className={ intFrameWidth < 800 ? "tooltipTitle":"invisible"}>
+                                    da click para ver la información
+                                </div>
                             </div>
                             <div className="card__face card__face--back" >
                                 <div className="card__content" >
-                                     <div class="card__header">
+                                     <div className="card__header">
                                         <img src={img7} alt="Trabajos Diseño" className="pp" />
                                     </div>
-                                    <div class="card__body">
+                                    <div className="card__body">
                                         <h4>Cumpleaños</h4>
                                         <p>Invitaciones de cumpleaños personalizadas, 
                                            a gusto del cliente por tema. 
@@ -184,17 +217,20 @@ function DesignWorks() {
                         </div>
                     </div> 
                     {/* -------------------------------------------------------------------------- */}
-                    <div className="card" data-tilt>
-                        <div className="card__inner" >
+                    <div className="card" >
+                        <div className="card__inner" onClick={ intFrameWidth <= 768 ? ()=>flipped(17) : ''}>
                             <div className="card__face card__face--front2">
                                 <h2>CATÁLOGOS</h2>
+                                <div className={ intFrameWidth < 800 ? "tooltipTitle":"invisible"}>
+                                    da click para ver la información
+                                </div>
                             </div>
                             <div className="card__face card__face--back" >
                                 <div className="card__content" >
-                                     <div class="card__header">
+                                     <div className="card__header">
                                         <img src={img8} alt="Trabajos Diseño" className="ppCard" />
                                     </div>
-                                    <div class="card__body">
+                                    <div className="card__body">
                                         <h4>Concord</h4>
                                         <p>Catálogo de productos para su distribución impresa y digital, 
                                            toma y edición fotográfica incluida. 
@@ -206,17 +242,20 @@ function DesignWorks() {
                         </div>
                     </div> 
                     {/* -------------------------------------------------------------------------- */}
-                    <div className="card" data-tilt>
-                        <div className="card__inner" >
+                    <div className={intFrameWidth <= 991 ? "invisible":"card"} >
+                        <div className="card__inner" onClick={ intFrameWidth <= 768 ? ()=>flipped(18) : ''}>
                             <div className="card__face card__face--front2">
                                 <h2>ESTADOS DE WHATSAPP</h2>
+                                <div className={ intFrameWidth < 800 ? "tooltipTitle":"invisible"}>
+                                    da click para ver la información
+                                </div>
                             </div>
                             <div className="card__face card__face--back" >
                                 <div className="card__content" >
-                                     <div class="card__header">
+                                     <div className="card__header">
                                         <img src={img9} alt="Trabajos Diseño" className="ppCard" />
                                     </div>
-                                    <div class="card__body">
+                                    <div className="card__body">
                                         <h4>Navidad</h4>
                                         <p>Baner con promoción de productos para estados de Whatsapp, 
                                             pueden ser estáticos o animados a la necesidad del cliente. 
@@ -228,17 +267,20 @@ function DesignWorks() {
                         </div>
                     </div> 
                     {/* -------------------------------------------------------------------------- */}
-                    <div className={intFrameWidth <= 991 ? "invisible":"card"} data-tilt>
-                        <div className="card__inner" >
+                    <div className={intFrameWidth <= 991 ? "invisible":"card"} >
+                        <div className="card__inner" onClick={ intFrameWidth <= 768 ? ()=>flipped(19) : ''}>
                             <div className="card__face card__face--front2">
                                 <h2>TEMPLATES</h2>
+                                <div className={ intFrameWidth < 800 ? "tooltipTitle":"invisible"}>
+                                    da click para ver la información
+                                </div>
                             </div>
                             <div className="card__face card__face--back" >
                                 <div className="card__content" >
-                                     <div class="card__header">
+                                     <div className="card__header">
                                         <img src={img10} alt="Trabajos Diseño" className="ppCard" />
                                     </div>
-                                    <div class="card__body">
+                                    <div className="card__body">
                                         <h4>Auladiser</h4>
                                         <p>Diseño de plantillas para envío masivo de correos, 
                                            información de cursos, promociones y próximas aperturas. 
@@ -252,17 +294,20 @@ function DesignWorks() {
                     {/* -----------------------------------FIN 2--------------------------------------- */}
 
                     <div className="designWorksSubTitle"><h2>Animación</h2></div> 
-                    <div className="card" data-tilt>
-                        <div className="card__inner" >
+                    <div className="card" >
+                        <div className="card__inner" onClick={ intFrameWidth <= 768 ? ()=>flipped(20) : ''}>
                             <div className="card__face card__face--front2">
                                 <h2>ESTADOS DE FACEBOOK</h2>
+                                <div className={ intFrameWidth < 800 ? "tooltipTitle":"invisible"}>
+                                    da click para ver la información
+                                </div>
                             </div>
                             <div className="card__face card__face--back" >
                                 <div className="card__content" >
-                                     <div class="card__header">
-                                        <img src={img11} alt="Trabajos Diseño" className="pp2" />
+                                     <div className="card__header">
+                                        <img src={img11} alt="Trabajos Diseño" className="ppCard" />
                                     </div>
-                                    <div class="card__body">
+                                    <div className="card__body">
                                         <h4>Skin Care</h4>
                                         <p>Edición de fotografías para creación de baners animados
                                            para redes sociales como Facebook, Instagram o Whatsapp. 
@@ -274,17 +319,20 @@ function DesignWorks() {
                         </div>
                     </div> 
                     {/* -------------------------------------------------------------------------- */}
-                    <div className="card" data-tilt>
-                        <div className="card__inner" >
+                    <div className="card" >
+                        <div className="card__inner" onClick={ intFrameWidth <= 768 ? ()=>flipped(21) : ''}>
                             <div className="card__face card__face--front2">
                                 <h2>POSTALES</h2>
+                                <div className={ intFrameWidth < 800 ? "tooltipTitle":"invisible"}>
+                                    da click para ver la información
+                                </div>
                             </div>
                             <div className="card__face card__face--back" >
                                 <div className="card__content" >
-                                     <div class="card__header">
+                                     <div className="card__header">
                                         <img src={img12} alt="Trabajos Diseño" className="pp3" />
                                     </div>
-                                    <div class="card__body">
+                                    <div className="card__body">
                                         <h4>Sport Corvet</h4>
                                         <p>Postales animadas para redes sociales de agradecimiento o 
                                            temáticas según la temporada. 
@@ -296,17 +344,20 @@ function DesignWorks() {
                         </div>
                     </div> 
                     {/* -------------------------------------------------------------------------- */}
-                    <div className="card" data-tilt>
-                        <div className="card__inner" >
+                    <div className="card" >
+                        <div className="card__inner" onClick={ intFrameWidth <= 768 ? ()=>flipped(22) : ''}>
                             <div className="card__face card__face--front2">
                                 <h2>SERVICIOS</h2>
+                                <div className={ intFrameWidth < 800 ? "tooltipTitle":"invisible"}>
+                                    da click para ver la información
+                                </div>
                             </div>
                             <div className="card__face card__face--back" >
                                 <div className="card__content" >
-                                     <div class="card__header">
+                                     <div className="card__header">
                                         <img src={img13} alt="Trabajos Diseño" className="pp3" />
                                     </div>
-                                    <div class="card__body">
+                                    <div className="card__body">
                                         <h4>Phoenix</h4>
                                         <p>Catálogo de servicios o presentación de negocio en redes sociales, 
                                            duración corta pero con sonido. 
@@ -318,17 +369,20 @@ function DesignWorks() {
                         </div>
                     </div> 
                     {/* -------------------------------------------------------------------------- */}
-                    <div className="card" data-tilt>
-                        <div className="card__inner" >
+                    <div className={intFrameWidth <= 991 ? "invisible":"card"} >
+                        <div className="card__inner" onClick={ intFrameWidth <= 768 ? ()=>flipped(23) : ''}>
                             <div className="card__face card__face--front2">
                                 <h2>PRESENCIA DE MARCA</h2>
+                                <div className={ intFrameWidth < 800 ? "tooltipTitle":"invisible"}>
+                                    da click para ver la información
+                                </div>
                             </div>
                             <div className="card__face card__face--back" >
                                 <div className="card__content" >
-                                     <div class="card__header">
+                                     <div className="card__header">
                                         <img src={img14} alt="Trabajos Diseño" className="pp3" />
                                     </div>
-                                    <div class="card__body">
+                                    <div className="card__body">
                                         <h4>Ultra Sport</h4>
                                         <p>Baner con promoción de marca para estados de Whatsapp, 
                                             Facebook o Instagram a la necesidad del cliente. 
@@ -340,17 +394,20 @@ function DesignWorks() {
                         </div>
                     </div> 
                     {/* -------------------------------------------------------------------------- */}
-                    <div className={intFrameWidth <= 991 ? "invisible":"card"} data-tilt>
-                        <div className="card__inner" >
+                    <div className={intFrameWidth <= 991 ? "invisible":"card"} >
+                        <div className="card__inner" onClick={ intFrameWidth <= 768 ? ()=>flipped(24) : ''}>
                             <div className="card__face card__face--front2">
                                 <h2>PRODUCTOS</h2>
+                                <div className={ intFrameWidth < 800 ? "tooltipTitle":"invisible"}>
+                                    da click para ver la información
+                                </div>
                             </div>
                             <div className="card__face card__face--back" >
                                 <div className="card__content" >
-                                     <div class="card__header">
+                                     <div className="card__header">
                                         <img src={img15} alt="Trabajos Diseño" className="pp" />
                                     </div>
-                                    <div class="card__body">
+                                    <div className="card__body">
                                         <h4>Tenis Chilos</h4>
                                         <p>Baner con promoción de productos para estados de Whatsapp, 
                                             Facebook o Instagram a la necesidad del cliente.

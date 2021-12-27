@@ -84,5 +84,23 @@
         justify-content: space-around;
         /* border: thin dotted #00f; */
     }
+    
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+    
+    .navBarLogo img{
+        width: 300px;
+    }
+    
+    .navBarMenu{
+        width: 80%;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        /* border: thin dotted #00f; */
+    }
 
 }
