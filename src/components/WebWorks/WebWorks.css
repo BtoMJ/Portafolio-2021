@@ -9,7 +9,7 @@
 
 .webWorksContainer{
     width: 100%;
-    height: 1050px;
+    height: 1100px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -27,17 +27,25 @@
 }
 
 .webWorksTitle{
-    width: 40%;
-    height: 50px;
+    width: 50%;
+    height: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    /* border: thin dotted #f00; */
 }
 
 .webWorksTitle h1{
     font-family: 'Anton', sans-serif;
     font-size: 3.5em;
+}
+
+.webWorksTitle p{
+    font-size: 20px;
+    padding: 5px 0;
+    line-height: 20px;
+    text-align: center;
 }
 
 .webWorksData{
@@ -72,9 +80,9 @@
     transform: rotateY(180deg);
 }
 
-/* .card__inner.is-flipped {
-    transform: rotateY(180deg);
-} */
+.card__inner.is-flipped {
+    transform: rotateY(180deg) !important;
+}
 
 .card__face {
     position: absolute;
@@ -91,6 +99,7 @@
     border: 2px solid #ffffff50;
     background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -231,6 +240,14 @@ a.boton:hover:after{
 	left: 130%;
 }
 
+.tooltipTitle{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #ffffff90;
+    text-align: center;
+}
+
 @media (min-width: 1200px) and (max-width: 1399px){
 
     .webWorksContainer{
@@ -243,7 +260,7 @@ a.boton:hover:after{
         background-color: #cccccc80;
          /* border: thin dotted #f00; */
     }
-    
+
     .webWorksInfo{
         width: 90%;
         height: 90%;
@@ -267,7 +284,7 @@ a.boton:hover:after{
         font-size: 24px;
         text-shadow: 0 5px 5px  rgba(0, 0, 0, 0.3);
     }
-    
+
     .card__body {
         display:flex;
         flex-direction: column;
@@ -281,7 +298,7 @@ a.boton:hover:after{
         font-weight: 600;
         margin-bottom: 10px;
     }
-    
+
     .card__body p {
         color: var(--dark);
         font-size: 14px;
@@ -293,12 +310,12 @@ a.boton:hover:after{
         position: relative;
         display: flex;
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
         height: 170px;
         border-radius: 0 0px 7% 7%;
         overflow: hidden;
     }
-    
+
     .pp {
         display: flex;
         flex-direction: column;
@@ -310,10 +327,10 @@ a.boton:hover:after{
     /* .ppCard {
         display: flex;
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
         width: 250px;
     } */
-    
+
 
 
 
@@ -322,15 +339,24 @@ a.boton:hover:after{
 
     .webWorksContainer{
         width: 100%;
-        height: 900px;
-        display: flex;
+        height: 850px;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         background-color: #cccccc80;
          /* border: thin dotted #f00; */
-        }
-        
+    }
+
+    .webWorksContainer2{
+        width: 100%;
+        height: 1150px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: #cccccc80;
+         /* border: thin dotted #f00; */
+    }
+
     .webWorksInfo{
         width: 100%;
         height: 90%;
@@ -342,14 +368,21 @@ a.boton:hover:after{
     }
 
     .webWorksTitle{
-        width: 40%;
-        height: 50px;
+        width: 60%;
+        height: 90px;
         padding: 20px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         /* border: thin dotted #f00; */
+    }
+
+    .webWorksTitle p{
+        font-size: 18px;
+        padding: 5px 0;
+        line-height: 20px;
+        text-align: center;
     }
 
     .card {
@@ -366,7 +399,7 @@ a.boton:hover:after{
         font-size: 24px;
         text-shadow: 0 5px 5px  rgba(0, 0, 0, 0.3);
     }
-    
+
     .card__body {
         display:flex;
         flex-direction: column;
@@ -380,7 +413,7 @@ a.boton:hover:after{
         font-weight: 600;
         margin-bottom: 10px;
     }
-    
+
     .card__body p {
         color: var(--dark);
         font-size: 12px;
@@ -392,12 +425,12 @@ a.boton:hover:after{
         position: relative;
         display: flex;
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
         height: 150px;
         border-radius: 0 0px 7% 7%;
         overflow: hidden;
     }
-    
+
     .pp {
         display: flex;
         flex-direction: column;
@@ -409,25 +442,36 @@ a.boton:hover:after{
     /* .ppCard {
         display: flex;
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
         width: 250px;
     } */
-    
+
 }
 
 @media (min-width: 768px) and (max-width: 991px){
 
     .webWorksContainer{
         width: 100%;
-        height: 1200px;
+        height: 1250px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: #cccccc80;
+         /* border: thin dotted #f00;    */
+    }
+
+    .webWorksContainer2{
+        width: 100%;
+        height: 1500px;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         background-color: #cccccc80;
          /* border: thin dotted #f00; */
-        }
-        
+    }
+
     .webWorksInfo{
         width: 100%;
         height: 90%;
@@ -439,7 +483,7 @@ a.boton:hover:after{
     }
 
     .webWorksTitle{
-        width: 40%;
+        width: 70%;
         height: 50px;
         padding: 20px 0;
         display: flex;
@@ -447,6 +491,13 @@ a.boton:hover:after{
         align-items: center;
         justify-content: space-around;
         /* border: thin dotted #f00; */
+    }
+
+    .webWorksTitle p{
+        font-size: 17px;
+        padding: 5px 0;
+        line-height: 20px;
+        text-align: center;
     }
 
     .webWorksTitle h1{
@@ -467,7 +518,7 @@ a.boton:hover:after{
         font-size: 24px;
         text-shadow: 0 5px 5px  rgba(0, 0, 0, 0.3);
     }
-    
+
     .card__body {
         display:flex;
         flex-direction: column;
@@ -481,7 +532,7 @@ a.boton:hover:after{
         font-weight: 600;
         margin-bottom: 10px;
     }
-    
+
     .card__body p {
         color: var(--dark);
         font-size: 12px;
@@ -493,12 +544,12 @@ a.boton:hover:after{
         position: relative;
         display: flex;
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
         height: 150px;
         border-radius: 0 0px 7% 7%;
         overflow: hidden;
     }
-    
+
     .pp {
         display: flex;
         flex-direction: column;
@@ -510,7 +561,126 @@ a.boton:hover:after{
     /* .ppCard {
         display: flex;
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
         width: 250px;
     } */
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+
+    .webWorksContainer{
+        width: 100%;
+        height: 1300px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: #cccccc80;
+         /* border: thin dotted #f00; */
+    }
+
+    .webWorksContainer2{
+        width: 100%;
+        height: 1350px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: #cccccc80;
+         /* border: thin dotted #f00; */
+    }
+
+    .webWorksInfo{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        /* border: thin dotted #f00; */
+    }
+
+    .webWorksTitle{
+        width: 70%;
+        height: 50px;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        /* border: thin dotted #f00; */
+    }
+
+    .webWorksTitle p{
+        font-size: 16px;
+        padding: 5px 0;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .webWorksTitle h1{
+        font-size: 3rem;
+    }
+
+    .card {
+        width: 170px;
+        height: 240px;
+        border: none;
+        margin: 0 5px 30px;
+        background-color: transparent;
+    }
+
+    .card__face--front h2, .card__face--front2 h2 {
+        color: #FFF;
+        text-align: center;
+        font-size: 22px;
+        text-shadow: 0 5px 5px  rgba(0, 0, 0, 0.3);
+    }
+
+    .card__body {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .card__body h4 {
+        color: var(--dark);
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .card__body p {
+        color: var(--dark);
+        font-size: 12px;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .card__header {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 110px;
+        border-radius: 0 0px 7% 7%;
+        overflow: hidden;
+    }
+
+    .pp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        /* border: thin dotted #f00; */
+    }
+
+    .ppCard {
+        width: 100%;
+        position: relative;
+        margin-top: -80px;
+
+    }
 }

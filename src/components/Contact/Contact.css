@@ -276,16 +276,15 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between ;
-        /* border: thin dotted #f00; */
     }
-
+    
     .TitleLocation h1{
         font-family: 'Anton', sans-serif;
         font-size: 30px;
         font-weight: bold;
         margin-left: 10px;
     }
-
+    
     .SubTitleLocation{
         width: 360px;
         font-family: 'Quicksand', sans-serif;
@@ -316,7 +315,7 @@
         border-radius: 5px;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     }
-
+    
     .ButtonFormContact{
         width: 100px;
         height: 30px; 
@@ -330,6 +329,72 @@
         font-weight: 500;
         transition: 0.5s all;
     }
+    
+    
+}
 
+@media (min-width: 576px) and (max-width: 767px){
 
+    .contact{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-image: linear-gradient(rgba(204, 204, 204, 0.85), rgba(204, 204, 204, 1)), url('../../assets/mail.png');
+        /* background-image: url('../../assets/mail.png'); */
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        /* border: thin dotted #00f; */
+    }
+
+    .contact img{
+        opacity: 0.1;
+    }
+    
+    .contactImage{
+        display: none;
+    }
+    
+    .contactForm{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        /* border: thin dotted rgb(179, 255, 0); */
+    }
+    
+    .TitleLocation h1{
+        text-align: center;
+    }
+    
+    .SubTitleLocation{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        font-size: 18px;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .InputFormContact{
+        width: 80%;
+        height: 30px;
+        font-size: 13px;
+        padding: 10px;
+        margin-left: 11px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    }
+    
+    
 }
