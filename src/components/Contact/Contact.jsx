@@ -41,13 +41,13 @@ function Contact() {
                     <Box sx={{ height: 130, marginTop: 2, marginBottom: 3 }}>
                         <Typography   sx={{ marginBottom: 1, fontWeight: 700 }} >
                             <p className="TitleLocation">
-                                <h1>Ponte en contacto conmigo</h1>
+                                <h1>Contacta conmigo</h1>
                             </p> 
                         </Typography>
                         <Typography >
                             <p  className="SubTitleLocation">
-                                Estaré feliz de colaborar en cualquier proyecto contigo o si tienes alguna duda acerca de mi trabajo o servicios
-                                por favor comunícate conmigo, te dejo este pequeño formulario y con gusto me comunicaré a la brevedad.   
+                                Si tienes alguna consulta de mi trabajo o servicios
+                                por favor comunícate conmigo, te dejo este formulario y me comunicaré pronto.   
                             </p> 
                         </Typography>
                     </Box>
