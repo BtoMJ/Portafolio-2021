@@ -540,26 +540,16 @@
   
   @media (min-width: 768px) and (max-width: 991px){
   
-      .webWorksContainer{
-          width: 100%;
-          height: 1250px;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: center;
-          background-color: #cccccc80;
-           /* border: thin dotted #f00;    */
-      }
-  
       .webWorksContainer2{
           width: 100%;
-          height: 1600px;
+          /* height: 1600px; */
+          height: auto;
+          padding: 80px 0 20px 0;
           display: flex;
           flex-direction: row;
           align-items: center;
           justify-content: center;
           background-color: #cccccc80;
-           /* border: thin dotted #f00; */
       }
   
       .webWorksInfo{
@@ -569,18 +559,16 @@
           flex-direction: column;
           align-items: center;
           justify-content: space-around;
-          /* border: thin dotted #f00; */
       }
   
       .webWorksTitle{
-          width: 70%;
+          width: 80%;
           height: 50px;
           padding: 20px 0;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: space-around;
-          /* border: thin dotted #f00; */
       }
   
       .webWorksTitle p{
@@ -593,10 +581,21 @@
       .webWorksTitle h1{
           font-size: 3.2rem;
       }
+
+      .webWorksData{
+        width: 95%;
+        height: 85%;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
   
       .card {
-          width: 180px;
-          height: 300px;
+          width: 170px;
+          height: 250px;
           border: none;
           margin: 0 5px 30px;
           background-color: transparent;
@@ -613,14 +612,14 @@
           display:flex;
           flex-direction: column;
           align-items: center;
-          padding: 20px;
+          padding: 15px;
       }
   
       .card__body h4 {
           color: var(--dark);
           font-size: 16px;
           font-weight: 600;
-          margin-bottom: 10px;
+          margin-bottom: 5px;
       }
   
       .card__body p {
@@ -635,7 +634,7 @@
           display: flex;
           flex-direction: column;
           align-items: center;
-          height: 150px;
+          height: 120px;
           border-radius: 0 0px 7% 7%;
           overflow: hidden;
       }
@@ -645,7 +644,6 @@
           flex-direction: column;
           align-items: center;
           height: 100%;
-          /* border: thin dotted #f00; */
       }
   
       /* .ppCard {
@@ -656,121 +654,121 @@
       } */
   }
   
-  @media (min-width: 576px) and (max-width: 767px){
+  @media (min-width: 601px) and (max-width: 767px){
   
-      .webWorksContainer{
-          width: 100%;
-          height: 1300px;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: center;
-          background-color: #cccccc80;
-           /* border: thin dotted #f00; */
-      }
+    .webWorksContainer{
+        width: 100%;
+        /* height: 1300px; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: #cccccc80;
+    }
+    
+    .webWorksContainer2{
+        width: 100%;
+        height: auto;
+        padding: 80px 0 20px 0;
+        /* height: 1350px; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: #cccccc80;
+    }
   
-      .webWorksContainer2{
-          width: 100%;
-          height: 1350px;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: center;
-          background-color: #cccccc80;
-           /* border: thin dotted #f00; */
-      }
+    .webWorksInfo{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
   
-      .webWorksInfo{
-          width: 100%;
-          height: 90%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-around;
-          /* border: thin dotted #f00; */
-      }
+    .webWorksTitle{
+        width: 90%;
+        height: 50px;
+        padding: 20px 0;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .webWorksTitle p{
+        font-size: 16px;
+        padding: 5px 0;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .webWorksTitle h1{
+        font-size: 3rem;
+    }
+
+    .card {
+        width: 160px;
+        height: 220px;
+        border: none;
+        margin: 0 5px 30px;
+        background-color: transparent;
+    }
   
-      .webWorksTitle{
-          width: 70%;
-          height: 50px;
-          padding: 20px 0;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-around;
-          /* border: thin dotted #f00; */
-      }
+    .card__face--front h2, .card__face--front2 h2 {
+        color: #FFF;
+        text-align: center;
+        font-size: 22px;
+        text-shadow: 0 5px 5px  rgba(0, 0, 0, 0.3);
+    }
+
+    .card__body {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .card__body h4 {
+        color: var(--dark);
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .card__body p {
+        color: var(--dark);
+        font-size: 12px;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .card__header {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 110px;
+        border-radius: 0 0px 7% 7%;
+        overflow: hidden;
+    }
   
-      .webWorksTitle p{
-          font-size: 16px;
-          padding: 5px 0;
-          line-height: 20px;
-          text-align: center;
-      }
-  
-      .webWorksTitle h1{
-          font-size: 3rem;
-      }
-  
-      .card {
-          width: 170px;
-          height: 240px;
-          border: none;
-          margin: 0 5px 30px;
-          background-color: transparent;
-      }
-  
-      .card__face--front h2, .card__face--front2 h2 {
-          color: #FFF;
-          text-align: center;
-          font-size: 22px;
-          text-shadow: 0 5px 5px  rgba(0, 0, 0, 0.3);
-      }
-  
-      .card__body {
-          display:flex;
-          flex-direction: column;
-          align-items: center;
-          padding: 15px;
-      }
-  
-      .card__body h4 {
-          color: var(--dark);
-          font-size: 14px;
-          font-weight: 600;
-          text-align: center;
-          margin-bottom: 10px;
-      }
-  
-      .card__body p {
-          color: var(--dark);
-          font-size: 12px;
-          line-height: 1.4;
-          text-align: center;
-      }
-  
-      .card__header {
-          position: relative;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          height: 110px;
-          border-radius: 0 0px 7% 7%;
-          overflow: hidden;
-      }
-  
-      .pp {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          height: 100%;
-          /* border: thin dotted #f00; */
-      }
-  
-      .ppCard {
-          width: 100%;
-          position: relative;
-          margin-top: -80px;
-  
-      }
+    .pp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        /* border: thin dotted #f00; */
+    }
+
+    .ppCard {
+        width: 100%;
+        position: relative;
+        margin-top: -80px;
+
+    }
+
   }

@@ -5,7 +5,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    /* border: thin dotted #000; */
 }
 
 .meContainerInfo{ 
@@ -15,14 +14,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    /* border: thin dotted #00f; */
 }
 
 .meInfo{ 
     width: 50%;
     height: 65%;
     padding: 10px 0;
-    /* border: thin dotted #f00; */
 }
 
 .meInfo h1{
@@ -51,7 +48,6 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 80%;
-    /* border: thin dotted #f00; */
 }
 
 @media (min-width: 1200px) and (max-width: 1399px){
@@ -63,7 +59,6 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        /* border: thin dotted #000; */
         
     }
     
@@ -74,14 +69,12 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        /* border: thin dotted #00f; */
     }
     
     .meInfo{ 
         width: 50%;
         height: 75%;
         padding: 10px 0;
-        /* border: thin dotted #f00; */
     }
     
     .meInfo h1{
@@ -103,7 +96,6 @@
         font-size: 1.3em;
     }
 
-
 }
 
 @media (min-width: 992px) and (max-width: 1199px){
@@ -115,7 +107,6 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        /* border: thin dotted #000; */
         
     }
     
@@ -126,14 +117,12 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        /* border: thin dotted #00f; */
     }
     
     .meInfo{ 
         width: 50%;
         height: 75%;
         padding: 10px 0;
-        /* border: thin dotted #f00; */
     }
     
     .meInfo h1{
@@ -162,7 +151,6 @@
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 100%;
-        /* border: thin dotted #f00; */
     }
 
 }
@@ -177,8 +165,6 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        /* border: thin dotted #000; */
-        
     }
     
     .meContainerInfo{ 
@@ -188,14 +174,12 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        /* border: thin dotted #00f; */
     }
     
     .meInfo{ 
         width: 50%;
         height: 75%;
         padding: 10px 0;
-        /* border: thin dotted #f00; */
     }
     
     .meInfo h1{
@@ -214,7 +198,7 @@
     .meInfo p{
         margin-top: 20px;
         font-family: 'Quicksand', sans-serif;
-        font-size: 1em;
+        font-size: 0.95rem;
     }
 
     .meImage{ 
@@ -224,13 +208,12 @@
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 110%;
-        /* border: thin dotted #f00; */
     }
 
 }
 
 
-@media (min-width: 576px) and (max-width: 767px){
+@media (min-width: 601px) and (max-width: 767px){
 
     .meContainer{
         width: 100%;
@@ -239,8 +222,6 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        /* border: thin dotted #000; */
-        
     }
     
     .meContainerInfo{ 
@@ -250,14 +231,12 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        /* border: thin dotted #00f; */
     }
     
     .meInfo{ 
         width: 60%;
         height: 75%;
         padding: 10px 0;
-        /* border: thin dotted #f00; */
     }
     
     .meInfo h1{
@@ -276,7 +255,7 @@
     .meInfo p{
         margin-top: 20px;
         font-family: 'Quicksand', sans-serif;
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
 
     .meImage{ 
@@ -286,15 +265,12 @@
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 100%;
-        /* border: thin dotted #f00; */
     }
 
 }
 
 
-
-
-@media (max-width: 575px){
+@media (max-width: 600px){
 
     
 

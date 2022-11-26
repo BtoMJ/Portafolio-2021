@@ -75,7 +75,7 @@ function WebWorks() {
                                     <div className="card__body">
                                         <h4>Asociación</h4>
                                         <p>Grupo de ayuda a personas con esclerosis múltiple, 
-                                           ubicada en la ciudad de León, Guanajuato. 
+                                           en la ciudad de León, Guanajuato. 
                                         </p>
                                         {/* <a className="LinkWebSite" href="#" target="_blank">visitar</a> */}
                                     </div>
@@ -274,7 +274,7 @@ function WebWorks() {
                                     </div>
                                     <div className="card__body">
                                         <h4>Calzado de Moda</h4>
-                                        <p>Ecommerce para compra de calzado urbano y deportivo de moda, 
+                                        <p>Ecommerce para compra de calzado deportivo de moda, 
                                            responsivo y con panel de administración. 
                                         </p>
                                         {/* <a className="LinkWebSite" href="#" target="_blank">visitar</a> */}
