@@ -1,0 +1,13 @@
+.goToTop{
+    border: none;
+    background-color: transparent;
+    position: fixed; 
+    width: 20px;
+    height: 20px;
+    left: 85%;
+    bottom: 40px;
+    font-size: 2rem;
+    z-index: 1;
+    cursor: pointer;
+    color: #000;
+}

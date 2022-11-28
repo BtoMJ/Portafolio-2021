@@ -6,11 +6,19 @@ import WebWorks from './components/WebWorks/WebWorks.jsx';
 import DesignWorks from './components/DesignWorks/DesignWorks.jsx';  
 import Contact from './components/Contact/Contact.jsx';  
 import Slider from './components/Slider/Slider.jsx';  
+import NavMobile from './components/NavMobile/NavMobile.jsx';
+import Scroll from './components/Scroll/Scroll.jsx';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+
+      <Scroll />
+
+      <div id='NavMobile' className='NavMobile'>
+        <NavMobile />
+      </div>
 
       <div className="TopContainer">
           <div><NavBar /></div>
