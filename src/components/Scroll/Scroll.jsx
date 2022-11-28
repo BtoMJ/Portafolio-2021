@@ -6,13 +6,11 @@ import './Scroll.css'
 
 export default function Scroll() {
 
-    var intFrameWidth = window.innerWidth;
-
     const [visible, setVisible] = useState(false)
     
     const toggleVisible = () => {
       const scrolled = document.documentElement.scrollTop;
-      if (scrolled > intFrameWidth){
+      if (scrolled > 300){
         setVisible(true)
       } 
       else if (scrolled <= 300){
@@ -24,8 +22,6 @@ export default function Scroll() {
       window.scrollTo({
         top: 0, 
         behavior: 'smooth'
-        /* you can also use 'auto' behaviour
-           in place of 'smooth' */
       });
     };
     

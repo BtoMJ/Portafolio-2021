@@ -6,7 +6,8 @@ import { FaBars } from "react-icons/fa";
 import './NavBar.css'
 
 function showMenu(){
-    document.getElementById('NavMobile').style.left='0';
+    document.getElementById('NavMobile').style.display='block';
+    document.getElementById('menuMobileContainer').style.left='0';
 }
 
 function NavBar() {

@@ -6,7 +6,7 @@ import './NavMobile.css';
 
 function hideMenu(){
     setTimeout(()=>{
-        document.getElementById('NavMobile').style.left='100vw';
+        document.getElementById('NavMobile').style.display='none';
     },2000)
 }
 
