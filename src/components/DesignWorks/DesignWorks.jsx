@@ -170,7 +170,7 @@ function DesignWorks() {
                     <div className="card" >
                         <div className="card__inner" onClick={ intFrameWidth <= 768 ? ()=>flipped(15) : ''}>
                             <div className="card__face card__face--front2">
-                                <h2>FOTOMONTAJES</h2>
+                                <h2>FOTO MONTAJES</h2>
                                 <div className={ intFrameWidth < 800 ? "tooltipTitle":"invisible"}>
                                     da click para ver la información
                                 </div>

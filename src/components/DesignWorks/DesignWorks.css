@@ -100,7 +100,7 @@
     display: none;
 }
 
-@media (min-width: 1200px) and (max-width: 1399px){
+@media (min-width: 1200px) and (max-width: 1920px){
 
     .designWorksContainer{
         width: 100%;
@@ -173,6 +173,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+    }
+
+    .card__face--front2  {
+        padding: 10px;
     }
 
     .card__face--front2 h2 {
