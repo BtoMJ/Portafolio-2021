@@ -14,7 +14,7 @@ export default function Scroll() {
         setVisible(true)
       } 
       else if (scrolled <= 300){
-        setVisible(false)
+        setVisible(false);
       }
     };
     
@@ -29,7 +29,7 @@ export default function Scroll() {
 
   return (
     <div>
-    <button className='goToTop'>
+    <button id='top' className='goToTop'>
         <FaArrowCircleUp onClick={scrollToTop} 
         style={{display: visible ? 'inline' : 'none'}} />
     </button>

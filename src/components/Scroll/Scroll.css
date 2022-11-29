@@ -1,13 +1,100 @@
-.goToTop{
-    border: none;
-    background-color: transparent;
-    position: fixed; 
-    width: 20px;
-    height: 20px;
-    left: 85%;
-    bottom: 40px;
-    font-size: 2rem;
-    z-index: 1;
-    cursor: pointer;
-    color: #000;
+
+
+@media (min-width: 1200px) and (max-width: 1920px){
+    
+    .goToTop{
+        border: none;
+        background-color: transparent;
+        position: fixed; 
+        width: 20px;
+        height: 20px;
+        left: 97%;
+        bottom: 40px;
+        font-size: 2rem;
+        z-index: 1;
+        cursor: pointer;
+        color: #000;
+        transition: 0.5s all ease;
+    }
+    
+    .goToTop:hover{
+        transform: scale(1.1);
+        color: rgb(204, 11, 11);
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    
+    .goToTop{
+        border: none;
+        background-color: transparent;
+        position: fixed; 
+        width: 20px;
+        height: 20px;
+        left: 96.5%;
+        bottom: 40px;
+        font-size: 2rem;
+        z-index: 1;
+        cursor: pointer;
+        color: #000;
+        transition: 0.5s all ease;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    
+    .goToTop{
+        border: none;
+        background-color: transparent;
+        position: fixed; 
+        width: 20px;
+        height: 20px;
+        left: 95.5%;
+        bottom: 40px;
+        font-size: 2rem;
+        z-index: 1;
+        cursor: pointer;
+        color: #000;
+        transition: 0.5s all ease;
+    }
+
+}
+
+@media (min-width: 601px) and (max-width: 767px){
+    
+    .goToTop{
+        border: none;
+        background-color: transparent;
+        position: fixed; 
+        width: 20px;
+        height: 20px;
+        left: 94.5%;
+        bottom: 40px;
+        font-size: 2rem;
+        z-index: 1;
+        cursor: pointer;
+        color: #000;
+        transition: 0.5s all ease;
+    }
+
+}
+
+@media (max-width: 600px){
+
+    .goToTop{
+        border: none;
+        background-color: transparent;
+        position: fixed; 
+        width: 20px;
+        height: 20px;
+        left: 90%;
+        bottom: 40px;
+        font-size: 2rem;
+        z-index: 1;
+        cursor: pointer;
+        color: #000;
+    }
+    
 }

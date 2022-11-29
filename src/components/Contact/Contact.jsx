@@ -1,32 +1,37 @@
 import React from 'react';
+
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import emailjs from 'emailjs-com';
-import swal from 'sweetalert';
+import emailjs from '@emailjs/browser';
+import ApiKey from '../../ApiKey';
+import toast, { Toaster } from 'react-hot-toast';
+
 import email from '../../assets/mail.png';
+
 import './Contact.css';
 
-const enviarCorreo =(e) => {
-    e.preventDefault()
+const notify = () => toast.success('E-mail enviado, gracias');
+const notifyError = () => toast.error('Algo salió mal, vuelve a intentar');
 
-    emailjs.sendForm('service_ucpocop', 'template_cukym8f', e.target, 'user_Cv9Or6FaAr9dBlgkiVBHf').then(
-        result => {
-           
-            swal("Correo enviado correctamente", {
-                icon: "success",
-                buttons: false,
-                timer: 3000,
-              });
-              
-            document.getElementById('name').value = ''
-            document.getElementById('email').value = ''
-            document.getElementById('subject').value = ''
-            document.getElementById('message').value = ''
-        },
-        error => {
-            alert( 'Ocurrio un error, intente nuevamente')
-            }
-    )
+const enviarCorreo =(e) => {
+    
+    e.preventDefault()
+    console.log( process.env.SERVICE_ID)
+
+    emailjs.sendForm( ApiKey.SERVICE_ID,ApiKey.TEMPLATE_ID, '#my-form',ApiKey.USER_ID )
+    .then(function(response) {
+      console.log('SUCCESS!', response.status, response.text);
+      notify();
+      document.getElementById('name').value = ''
+      document.getElementById('subject').value = ''
+      document.getElementById('email').value = ''
+      document.getElementById('message').value = ''
+      
+    }, function(err) {
+      console.log('FAILED...', err);
+      notifyError();
+    });
+
 }
 
 function Contact() {
@@ -52,7 +57,7 @@ function Contact() {
                         </Typography>
                     </Box>
                     <Box sx={{margin: "50px 0"}}>
-                        <form onSubmit = {enviarCorreo} style={{display: "flex", flexDirection: "column"}}>
+                        <form onSubmit = {enviarCorreo} style={{display: "flex", flexDirection: "column"}} id="my-form" name="my-form">
                             <input className="InputFormContact" type="text" name="name" id="name" placeholder="Nombre" required></input>
                             <input className="InputFormContact" type="email" name="email" id="email" placeholder="Email"  required></input>
                             <input className="InputFormContact" type="text" name="subject" id="subject" placeholder="Asunto" required></input>
@@ -64,6 +69,7 @@ function Contact() {
               </div>
 
           </div>
+          <Toaster />
         </div>
     )
 }
