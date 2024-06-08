@@ -56,7 +56,7 @@ function Contact() {
                             </p> 
                         </Typography>
                     </Box>
-                    <Box sx={{margin: "50px 0"}}>
+                    <Box sx={{margin: "50px 0", marginTop: "60px"}}>
                         <form onSubmit = {enviarCorreo} style={{display: "flex", flexDirection: "column"}} id="my-form" name="my-form">
                             <input className="InputFormContact" type="text" name="name" id="name" placeholder="Nombre" required></input>
                             <input className="InputFormContact" type="email" name="email" id="email" placeholder="Email"  required></input>
