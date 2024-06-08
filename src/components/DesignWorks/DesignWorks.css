@@ -109,7 +109,8 @@
 
     .designWorksContainer{
         width: 100%;
-        height: 1750px;
+        height: auto;
+        padding: 80px 0;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -119,6 +120,15 @@
     .designWorksInfo{
         width: 90%;
         height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .designWorksTitle{
+        width: 70%;
+        height: 150px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -136,8 +146,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
-        margin-top: -30px;
+        width: 90%;
+        margin-top: 20px;
     }
 
     .pp3{
