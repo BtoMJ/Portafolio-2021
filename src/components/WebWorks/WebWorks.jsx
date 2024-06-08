@@ -23,7 +23,6 @@ function WebWorks() {
 
     return (
         <div className={ intFrameWidthWeb >= 800 ? "webWorksContainer":"webWorksContainer2" } id="webWorks">
-         {/* <div className="webWorksContainer" id="webWorks"> */}
             <div className="webWorksInfo">
                 <div className="webWorksTitle">
                     <h1>Trabajos Web</h1>

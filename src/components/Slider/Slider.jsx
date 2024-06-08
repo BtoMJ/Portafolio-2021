@@ -5,6 +5,7 @@ import './Slider.css'
 function Slider() {
     
     var intFrameWidth2 = window.innerWidth;
+    console.log("Medida: ",intFrameWidth2)
 
     return (
         <div className="SliderContainer">

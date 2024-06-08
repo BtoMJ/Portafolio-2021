@@ -771,13 +771,12 @@
 
   }
 
-  @media (max-width: 600px){
+  @media (max-width: 576px){
     
     .webWorksContainer2{
         width: 100%;
         height: auto;
         padding: 80px 0 20px 0;
-        /* height: 1350px; */
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -796,7 +795,7 @@
   
     .webWorksTitle{
         width: 90%;
-        height: 50px;
+        height: 200px;
         padding: 20px 0;
         margin-bottom: 40px;
         display: flex;
@@ -806,9 +805,9 @@
     }
 
     .webWorksTitle p{
-        font-size: 16px;
+        font-size: 1.5rem;
+        line-height: 30px;
         padding: 5px 0;
-        line-height: 20px;
         text-align: center;
     }
 

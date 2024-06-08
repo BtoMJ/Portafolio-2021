@@ -9,11 +9,8 @@
     align-items: center;
     justify-content: space-around;
     border-radius: 10px;
-    /* background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1)) */
-    /* background: rgb(193, 255, 157); */
     background: #ffffff10;
     backdrop-filter: blur(10px);
-    /* border: thin dotted #f00; */
 }
 
 .Slider{
@@ -296,11 +293,11 @@
 
 }
 
-@media (max-width: 600px){
+@media (max-width: 576px){
 
     .SliderContainer{
         width: 95%;
-        height: 470px;
+        height: 70vh;
         margin: 0 auto;
         margin-top: 10px;
         padding: 10px 0;
@@ -315,7 +312,7 @@
 
     .Slider{
         width: 100%;
-        height: 380px;
+        height: 58vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -323,8 +320,8 @@
     }
 
     .Middle2{
-        width: 90%;
-        height: 180px;
+        width: 100%;
+        height: 400px;
         color: #fff;
         display: flex;
         flex-direction: column;
@@ -333,8 +330,8 @@
     }   
 
     .MiddleInfo2{
-        width: 90%;
-        height: 230px;
+        width: 100%;
+        height: 300px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -346,23 +343,24 @@
     
     .MiddleInfo2 h1{
         font-family: 'Anton', sans-serif;
-        font-size: 20px;
+        font-size: 2rem;
         margin-bottom: 18px;
         text-align: center;
         text-shadow: 0 5px 5px #000;
-    }
-
+        }
+        
     .MiddleInfo2 p{
+        font-family: "Roboto", sans-serif;
         margin-bottom: 9px;
-        font-size: 12px;
+        font-size: 1.4rem;
         text-align: center;
         margin-bottom: 25px;
         text-shadow: 0 5px 5px #000;
     }
     
     .MiddleImage1, .MiddleImage2, .MiddleImage3{
-        width: 90%;
-        height: 550px;
+        width: 100%;
+        height: 250px;
         border-radius: 0 0 10px 10px;
         background-repeat: no-repeat;
         background-position: center center;
@@ -372,14 +370,15 @@
     .SliderButton{
         text-shadow: 0 5px 5px #000;
         box-shadow: 0 5px 5px #00000050;
-        padding: 2px 20px;
+        padding: 4px 30px;
         text-decoration: none;
         border-radius: 30px;
         border: thin solid #fff;
         color: #fff;
-        margin-top: 1px;
+        margin-top: 5px;
         background-color: transparent;
         transition: 0.5s all;
+        font-size: 1.2rem;
     }
 
 }
