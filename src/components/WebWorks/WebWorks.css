@@ -33,7 +33,6 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
-      /* border: thin dotted #f00; */
   }
   
   .webWorksTitle h1{
@@ -60,10 +59,10 @@
   
   .card {
       width: 270px;
-      height: 400px;
-      border: none;
+      height: 400px !important;
+      border: none !important;
       margin: 0 5px 30px;
-      background-color: transparent;
+      background-color: transparent !important;
   }
   
   .card__inner {
@@ -128,18 +127,6 @@
       overflow: hidden;
   }
   
-    /* .card__header:after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
-      z-index: -1;
-    } */
-  
   .pp {
       display: flex;
       flex-direction: column;
@@ -188,16 +175,13 @@
       text-align: center;
       font-weight: bold;
       max-width: 320px;
-      /* height: 65px; */
       margin-bottom: 60px;
       overflow: hidden;
       color:rgba(255,255,255,1);
       cursor: pointer;
       letter-spacing: 2px;
-      /* box-shadow:inset 0 0 0 1px rgba(0,0,0,0.1); */
       text-decoration: none;
       transition: all ease 0.5s;
-      /* background:#10B87B; */
       z-index: 9999;
   }
   
@@ -222,7 +206,6 @@
   
   .boton:hover{
       text-shadow: 0 1px 1px rgba(0,0,0,0.5);
-      /* background:#12C987 */
   }
   
   .boton:hover:after,
@@ -348,7 +331,6 @@
           align-items: center;
           justify-content: center;
           background-color: #cccccc80;
-           /* border: thin dotted #f00; */
       }
   
       .webWorksInfo{
@@ -362,7 +344,7 @@
   
       .card {
           width: 220px;
-          height: 350px;
+          height: 350px !important;
           border: none;
           margin: 0 5px 30px;
           background-color: transparent;
@@ -434,17 +416,16 @@
           align-items: center;
           justify-content: center;
           background-color: #cccccc80;
-           /* border: thin dotted #f00; */
       }
   
       .webWorksContainer2{
           width: 100%;
-          height: 1150px;
+          height: auto;
+          padding: 5vh 0;
           flex-direction: row;
           align-items: center;
           justify-content: center;
           background-color: #cccccc80;
-           /* border: thin dotted #f00; */
       }
   
       .webWorksInfo{
@@ -454,18 +435,16 @@
           flex-direction: column;
           align-items: center;
           justify-content: space-around;
-          /* border: thin dotted #f00; */
       }
   
       .webWorksTitle{
           width: 60%;
-          height: 90px;
+          height: 190px;
           padding: 20px 0;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: space-around;
-          /* border: thin dotted #f00; */
       }
   
       .webWorksTitle p{
@@ -474,14 +453,35 @@
           line-height: 20px;
           text-align: center;
       }
+
+      .webWorksData{
+        width: 95%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
   
       .card {
           width: 180px;
           height: 300px;
           border: none;
-          margin: 0 5px 30px;
+          margin: 0 5px -110px 0;
           background-color: transparent;
       }
+
+      .card__face {
+        position: absolute;
+        width: 100%;
+        height: 60%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        overflow: hidden;
+        border-radius: 16px;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    }
   
       .card__face--front h2, .card__face--front2 h2 {
           color: #FFF;
@@ -526,15 +526,7 @@
           flex-direction: column;
           align-items: center;
           height: 100%;
-          /* border: thin dotted #f00; */
       }
-  
-      /* .ppCard {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          width: 250px;
-      } */
   
   }
   
@@ -542,7 +534,6 @@
   
       .webWorksContainer2{
           width: 100%;
-          /* height: 1600px; */
           height: auto;
           padding: 80px 0 20px 0;
           display: flex;
@@ -563,7 +554,7 @@
   
       .webWorksTitle{
           width: 80%;
-          height: 50px;
+          height: 120px;
           padding: 20px 0;
           display: flex;
           flex-direction: column;
@@ -584,7 +575,7 @@
 
       .webWorksData{
         width: 95%;
-        height: 85%;
+        height: 75%;
         margin-top: 40px;
         display: flex;
         flex-direction: row;
@@ -597,9 +588,20 @@
           width: 170px;
           height: 250px;
           border: none;
-          margin: 0 5px 30px;
+          margin: 0 5px -100px;
           background-color: transparent;
       }
+
+      .card__face {
+        position: absolute;
+        width: 100%;
+        height: 60%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        overflow: hidden;
+        border-radius: 16px;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    }
   
       .card__face--front h2, .card__face--front2 h2 {
           color: #FFF;
@@ -878,7 +880,68 @@
 
   }
 
-  @media (max-width: 576px) and (max-height:844px){
+  @media (max-width: 576px) and (max-height:932px){
+
+    .card {
+        width: 160px;
+        height: 220px !important;
+        border: none !important;
+        margin: 0 5px 30px;
+        background-color: transparent !important;
+    }
+  
+    .card__face--front h2, .card__face--front2 h2 {
+        color: #FFF;
+        text-align: center;
+        font-size: 22px;
+        text-shadow: 0 5px 5px  rgba(0, 0, 0, 0.3);
+    }
+
+    .card__body {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .card__body h4 {
+        color: var(--dark);
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .card__body p {
+        color: var(--dark);
+        font-size: 12px;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .card__header {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 110px;
+        border-radius: 0 0px 7% 7%;
+        overflow: hidden;
+    }
+  
+    .pp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    .ppCard {
+        width: 100%;
+        position: relative;
+        margin-top: -80px;
+
+    }
 
     .webWorksTitle{
         width: 90%;
